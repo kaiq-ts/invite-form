@@ -1,0 +1,49 @@
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  column-gap: 2.7rem;
+  margin-top: 1rem;
+}
+
+.theme-card {
+  background: var(--shape-button);
+  border: 0.125rem solid var(--input-stroke);
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+  cursor: pointer;
+  position: relative;
+
+  & img {
+    max-width: 7.875rem;
+    height: 4rem;
+    border-radius: 0.25rem;
+  }
+
+  & span {
+    font: var(--body-md);
+    color: var(--text-heading);
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    border: 0.125rem solid transparent;
+  }
+
+  &:has(:checked) {
+    outline: 0.125rem solid var(--brand-light);
+  }
+}

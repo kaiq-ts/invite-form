@@ -1,0 +1,41 @@
+#app {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+main {
+  overflow: auto;
+  padding-inline: 8.125rem;
+  margin: 1.25rem 1.25rem 1.25rem 0;
+  border-radius: 0.75rem;
+}
+
+aside {
+  background: url(/assets/images/background.jpg) center center no-repeat;
+  background-size: contain;
+  max-width: 25rem;
+  margin: 1.25rem;
+  border-radius: 0.75rem;
+
+  & img {
+    max-width: 2.875rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+
+  & h1 {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font: var(--logo);
+    color: var(--accent-pink);
+  }
+
+  & p {
+    margin-top: 0.25rem;
+    margin-left: 2rem;
+    font: var(--body-md);
+    color: var(--text-body);
+  }
+}

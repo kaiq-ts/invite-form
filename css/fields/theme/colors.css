@@ -1,0 +1,45 @@
+.color {
+  margin-top: 1.5rem;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  column-gap: 1.5rem;
+}
+
+.color-inner {
+  position: relative;
+  line-height: 0;
+  cursor: pointer;
+
+  & img {
+    max-width: 2.5rem;
+    height: auto;
+    border: 0.4rem solid var(--shape-button);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  &:hover,
+  &:focus-within {
+    img {
+      border-color: var(--shape-hover);
+    }
+  }
+
+  &:has(:checked) {
+    outline: 0.125rem solid var(--brand-light);
+    border-radius: 50%;
+  }
+}

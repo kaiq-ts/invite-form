@@ -1,0 +1,46 @@
+.ticket {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--brand-dark);
+  padding: 0.8rem 0.8rem 0.8rem 3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn:before {
+  content: url("../../assets/icons/ticket-default.svg");
+  position: absolute;
+  left: 0.625rem;
+  top: 52%;
+  transform: translateY(-50%) scale(0.8);
+  max-width: 1.5rem;
+  height: auto;
+}
+
+.btn:hover:before {
+  content: url("../../assets/icons/ticket-hover.svg");
+  transform: translateY(-50%) scale(0.8);
+}
+
+.btn a {
+  text-decoration: none;
+  font: var(--body-md-semibold);
+  color: var(--text-heading);
+  position: relative;
+  z-index: 1;
+}
+
+.btn:hover {
+  background-color: var(--brand-light);
+
+  & a {
+    color: var(--input-base);
+  }
+}

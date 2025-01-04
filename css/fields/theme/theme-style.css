@@ -1,0 +1,11 @@
+@import url(./colors.css);
+@import url(./theme.css);
+@import url(./theme-switch.css);
+
+.theme-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.75rem;
+  gap: 2.8rem;
+}

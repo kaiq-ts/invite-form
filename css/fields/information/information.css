@@ -1,0 +1,18 @@
+@import url(./switch.css);
+
+.event-information {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.event-name {
+  width: 100%;
+  grid-column: span 2;
+}
+
+.type-title {
+  font: var(--body-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 0.25rem;
+}

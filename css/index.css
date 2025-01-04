@@ -1,0 +1,9 @@
+@import url(./global.css);
+@import url(./style.css);
+@import url(./forms.css);
+@import url(./inputs.css);
+@import url(./fields/information/information.css);
+@import url(./fields/theme/theme-style.css);
+@import url(./fields/contact.css);
+@import url(./fields/terms.css);
+@import url(./fields/button.css);

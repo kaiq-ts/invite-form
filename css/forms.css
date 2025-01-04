@@ -1,0 +1,39 @@
+form {
+  margin-top: 2.5rem;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: none;
+  outline: none;
+  gap: 1.5rem;
+}
+
+legend {
+  font: var(--heading-sm);
+  color: var(--text-heading);
+}
+
+fieldset + fieldset {
+  margin-top: 3rem;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+}
+
+.input-wrapper {
+  margin-top: 0.875rem;
+}
+
+.calendar {
+  max-width: 1.5rem;
+}
+
+.building,
+.camera {
+  max-width: 1rem;
+}
