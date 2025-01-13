@@ -3,23 +3,23 @@
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  row-gap: 1.5rem;
-  column-gap: 2.7rem;
-  margin-top: 1rem;
+  row-gap: 24px;
+  column-gap: 43px;
+  margin-top: 16px;
 }
 
 .theme-card {
   background: var(--shape-button);
-  border: 0.125rem solid var(--input-stroke);
-  border-radius: 0.5rem;
-  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+  border: 2px solid var(--input-stroke);
+  border-radius: 8px;
+  padding: 4px 4px 8px 4px;
   cursor: pointer;
   position: relative;
 
   & img {
-    max-width: 7.875rem;
-    height: 4rem;
-    border-radius: 0.25rem;
+    max-width: 126px;
+    height: 64px;
+    border-radius: 4px;
   }
 
   & span {
@@ -27,7 +27,7 @@
     color: var(--text-heading);
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
+    margin-top: 8px;
   }
 
   & input,
@@ -40,10 +40,10 @@
 
   &:hover,
   &:focus-within {
-    border: 0.125rem solid transparent;
+    border: 2px solid transparent;
   }
 
   &:has(:checked) {
-    outline: 0.125rem solid var(--brand-light);
+    outline: 2px solid var(--brand-light);
   }
 }

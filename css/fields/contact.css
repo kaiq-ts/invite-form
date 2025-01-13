@@ -1,6 +1,6 @@
 .contact-data {
   display: grid;
   grid-template-columns: 1fr;
-  padding-bottom: 3rem;
+  padding-bottom: 48px;
   border-bottom: 1px solid var(--input-stroke);
 }

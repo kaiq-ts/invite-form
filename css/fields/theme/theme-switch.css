@@ -1,7 +1,7 @@
 .style-toggle {
   display: flex;
   align-items: center;
-  padding-top: 0.75rem;
+  padding-top: 12px;
 }
 
 .dark-mode {
@@ -16,11 +16,11 @@
 }
 
 .slider-mode {
-  width: 4rem;
-  height: 2rem;
+  width: 64px;
+  height: 32px;
   background-color: var(--input-base);
-  border: 0.125rem solid var(--input-stroke);
-  border-radius: 3.125rem;
+  border: 2px solid var(--input-stroke);
+  border-radius: 50px;
   position: relative;
   transition: 0.3s;
 }
@@ -30,8 +30,8 @@
   position: absolute;
   top: 50%;
   left: 2px;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   background-color: var(--input-stroke);
   border-radius: 50%;
   transform: translateY(-50%);
@@ -43,14 +43,14 @@
 }
 
 .dark-mode input:checked + .slider-mode::before {
-  transform: translate(2rem, -50%);
+  transform: translate(32px, -50%);
   background-color: var(--text-heading);
 }
 
 .word-mode {
   font: var(--body-md);
   color: var(--text-heading);
-  padding-left: 0.75rem;
+  padding-left: 12px;
 }
 
 .dark-mode input:checked + .slider-mode + .word-mode {
@@ -60,10 +60,10 @@
 .dark-mode input:checked + .slider-mode + .word-mode::after {
   content: "Claro";
   visibility: visible;
-  padding-left: 1.45rem;
+  padding-left: 23px;
 }
 
 .dark-mode input:not(:checked) + .slider-mode + .word-mode::before {
   content: "Escuro";
-  padding-left: 0.75rem;
+  padding-left: 12px;
 }

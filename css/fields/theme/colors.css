@@ -1,13 +1,13 @@
 .color {
-  margin-top: 1.5rem;
+  margin-top: 24px;
 }
 
 .color-options {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  column-gap: 1.5rem;
+  margin-top: 16px;
+  column-gap: 24px;
 }
 
 .color-inner {
@@ -16,9 +16,9 @@
   cursor: pointer;
 
   & img {
-    max-width: 2.5rem;
+    max-width: 40px;
     height: auto;
-    border: 0.4rem solid var(--shape-button);
+    border: 6px solid var(--shape-button);
     border-radius: 50%;
     flex-shrink: 0;
   }
@@ -39,7 +39,7 @@
   }
 
   &:has(:checked) {
-    outline: 0.125rem solid var(--brand-light);
+    outline: 2px solid var(--brand-light);
     border-radius: 50%;
   }
 }

@@ -2,7 +2,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 16px;
 
   & span {
     display: flex;
@@ -15,11 +15,11 @@
 .switch {
   position: relative;
   display: inline-block;
-  margin-top: 0.65rem;
-  max-width: 22rem;
-  height: 3.125rem;
+  margin-top: 10px;
+  max-width: 352px;
+  height: 50px;
   background: var(--input-base);
-  border-radius: 0.5rem;
+  border-radius: 8px;
   border: 2px solid transparent;
   outline: 1px solid var(--input-stroke);
   overflow: hidden;
@@ -38,12 +38,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 2rem;
+  padding-inline: 32px;
   box-sizing: border-box;
   transition: background 0.3s ease;
 
   & .option-online {
-    padding-right: 1rem;
+    padding-right: 16px;
   }
 }
 
@@ -53,27 +53,27 @@
   top: 0.5%;
   left: 0;
   width: 50%;
-  height: 2.8rem;
+  height: 45px;
   background: var(--shape-button);
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   z-index: -1;
   transition: left 0.3s ease;
 }
 
 .option-presencial {
   background-image: url("/assets/icons/building.svg");
-  background-size: 1.125rem 1.125rem;
+  background-size: 18px;
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 .option-online {
   background-image: url("/assets/icons/camera.svg");
-  background-size: 1.125rem 1.125rem;
+  background-size: 18px;
   background-repeat: no-repeat;
   background-position: left center;
-  padding-left: 1.5rem;
+  padding-left: 24px;
 }
 
 .slider .option-presencial,

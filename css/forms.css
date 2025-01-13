@@ -1,5 +1,5 @@
 form {
-  margin-top: 2.5rem;
+  margin-top: 40px;
 }
 
 fieldset {
@@ -7,7 +7,7 @@ fieldset {
   grid-template-columns: repeat(2, 1fr);
   border: none;
   outline: none;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 legend {
@@ -16,24 +16,24 @@ legend {
 }
 
 fieldset + fieldset {
-  margin-top: 3rem;
+  margin-top: 48px;
 }
 
 .grid-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1.25rem;
+  column-gap: 20px;
 }
 
 .input-wrapper {
-  margin-top: 0.875rem;
+  margin-top: 14px;
 }
 
 .calendar {
-  max-width: 1.5rem;
+  max-width: 24px;
 }
 
 .building,
 .camera {
-  max-width: 1rem;
+  max-width: 16px;
 }

@@ -1,7 +1,7 @@
 .conditions {
   display: flex;
   flex-direction: column;
-  row-gap: 0.125rem;
+  row-gap: 2px;
   align-items: flex-start;
 }
 
@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
   position: relative;
   flex-wrap: nowrap;
 
@@ -18,14 +18,14 @@
     position: absolute;
     inset: 0;
     cursor: pointer;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
   }
 
   & .checkbox-image {
-    flex: 0 0 1.5rem;
-    margin-left: 0.75rem;
-    height: 1.5rem;
+    flex: 0 0 24px;
+    margin-left: 12px;
+    height: 24px;
     background-image: url(../../assets/icons/checkbox-default.svg);
     background-repeat: no-repeat;
   }

@@ -6,6 +6,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1.75rem;
-  gap: 2.8rem;
+  margin-top: 28px;
+  gap: 45px;
 }
