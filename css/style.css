@@ -15,12 +15,12 @@ main {
 aside {
   background: url(/assets/images/background.jpg) center center no-repeat;
   background-size: contain;
-  max-width: 400px;
+  max-width: 100%;
   margin: 20px;
   border-radius: 12px;
 
   & img {
-    max-width: 46px;
+    max-width: 100%;
     margin-top: 32px;
     margin-left: 32px;
   }
@@ -37,5 +37,23 @@ aside {
     margin-left: 32px;
     font: var(--body-md);
     color: var(--text-body);
+  }
+}
+
+@media (max-width: 1200px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+
+    & aside {
+      background: none;
+      margin-left: 0;
+    }
+
+    & main {
+      margin: 0 auto;
+      padding-inline: 32px;
+      width: 100%;
+    }
   }
 }

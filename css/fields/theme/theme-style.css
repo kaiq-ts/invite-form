@@ -9,3 +9,10 @@
   margin-top: 28px;
   gap: 45px;
 }
+
+@media (max-width: 640px) {
+  .theme-style {
+    display: flex;
+    flex-direction: column;
+  }
+}

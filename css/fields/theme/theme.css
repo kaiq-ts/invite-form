@@ -3,8 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  row-gap: 24px;
-  column-gap: 43px;
+  gap: 24px;
   margin-top: 16px;
 }
 
@@ -45,5 +44,23 @@
 
   &:has(:checked) {
     outline: 2px solid var(--brand-light);
+  }
+}
+
+@media (max-width: 760px) {
+  .theme {
+    display: inline;
+  }
+
+  .theme-options {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .theme-options {
+    display: flex;
+    gap: 8px;
   }
 }

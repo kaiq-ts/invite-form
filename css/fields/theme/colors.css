@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .color-inner {
@@ -20,7 +20,6 @@
     height: auto;
     border: 6px solid var(--shape-button);
     border-radius: 50%;
-    flex-shrink: 0;
   }
 
   & input,
@@ -41,5 +40,16 @@
   &:has(:checked) {
     outline: 2px solid var(--brand-light);
     border-radius: 50%;
+  }
+}
+
+@media (max-width: 760px) {
+  .color {
+    display: inline;
+  }
+
+  .color-options {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

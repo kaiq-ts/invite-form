@@ -5,13 +5,18 @@
   align-items: flex-start;
 }
 
+.terms-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
 .checkbox-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
   gap: 8px;
   position: relative;
-  flex-wrap: nowrap;
 
   & [type="checkbox"] {
     all: unset;
@@ -19,12 +24,11 @@
     inset: 0;
     cursor: pointer;
     width: 24px;
-    height: 24px;
+    height: auto;
   }
 
   & .checkbox-image {
     flex: 0 0 24px;
-    margin-left: 12px;
     height: 24px;
     background-image: url(../../assets/icons/checkbox-default.svg);
     background-repeat: no-repeat;
@@ -36,7 +40,6 @@
 }
 
 .checkbox-wrapper label {
-  white-space: nowrap;
   font: var(--body-xs);
   color: var(--text-body);
 }
