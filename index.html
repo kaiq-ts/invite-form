@@ -44,8 +44,9 @@
                   id="event-name"
                   name="event-name"
                   type="text"
-                  placeholder="Nome do evento"
                   required
+                  placeholder="Nome do evento"
+                  pattern=".{3,}"
                 />
                 <div class="error">
                   <img src="./assets/icons/error.svg" alt="error icon" />
@@ -60,8 +61,6 @@
                     id="appointment-start"
                     name="appointment-start"
                     type="datetime-local"
-                    placeholder="DD/MM/AAAA, --:--"
-                    required
                   />
                   <div class="error">
                     <img src="./assets/icons/error.svg" alt="error icon" />
@@ -75,8 +74,6 @@
                     id="appointment-end"
                     name="appointment-end"
                     type="datetime-local"
-                    placeholder="DD/MM/AAAA, --:--"
-                    required
                   />
                   <div class="error">
                     <img src="./assets/icons/error.svg" alt="error icon" />
@@ -101,8 +98,9 @@
                     id="address"
                     name="address"
                     type="text"
-                    placeholder="Link ou endereço"
                     required
+                    placeholder="Link ou endereço"
+                    pattern=".{3,}"
                   />
                   <div class="error">
                     <img src="./assets/icons/error.svg" alt="error icon" />
@@ -118,8 +116,8 @@
                   id="description"
                   cols="30"
                   rows="5"
-                  placeholder="Escreva sobre os detalhes do evento"
                   required
+                  placeholder="Escreva sobre os detalhes do evento"
                 ></textarea>
               </div>
             </fieldset>
@@ -364,8 +362,9 @@
                   id="contact-name"
                   name="contact-name"
                   type="text"
-                  placeholder="Nome completo"
                   required
+                  placeholder="Nome completo"
+                  pattern=".{3,}"
                 />
                 <div class="error">
                   <img src="./assets/icons/error.svg" alt="error icon" />
@@ -380,8 +379,8 @@
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="exemplo@email.com"
                     required
+                    placeholder="exemplo@email.com"
                   />
                   <div class="error">
                     <img src="./assets/icons/error.svg" alt="error icon" />
@@ -395,8 +394,9 @@
                     id="phone-number"
                     name="phone-number"
                     type="tel"
-                    placeholder="(48) 99999-9999"
                     required
+                    placeholder="(48) 99999-9999"
+                    pattern="\d{11,15}"
                   />
                   <div class="error">
                     <img src="./assets/icons/error.svg" alt="error icon" />

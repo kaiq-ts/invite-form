@@ -54,38 +54,16 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 }
 
 .error {
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-  gap: 8px;
-
-  & img {
-    max-width: 16px;
-    height: 16px;
-  }
-
-  & .error-message {
-    font: var(--body-sm);
-    color: var(--feedback);
-  }
-}
-
-select {
-  background: url(../../assets/icons/arrow-down-01.svg) no-repeat
-    calc(100% - 16px);
-}
-
-.address .flex {
-  gap: 20px;
-}
-
-.input-wrapper:has([disabled]) {
-  opacity: 0.5;
+  display: none;
 }
 
 input {
   &[disabled] {
     outline: 1px solid var(--input-stroke);
+  }
+
+  &:not(:focus):invalid {
+    outline-color: var(--input-stroke);
   }
 
   &:invalid {
@@ -94,5 +72,22 @@ input {
 
   &:not(:focus):valid + .error {
     display: none;
+  }
+
+  &:invalid:not(:placeholder-shown) + .error {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    gap: 8px;
+
+    & img {
+      max-width: 16px;
+      height: 16px;
+    }
+
+    & .error-message {
+      font: var(--body-sm);
+      color: var(--feedback);
+    }
   }
 }
